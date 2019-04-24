@@ -1,0 +1,12 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django-data-ingest = {editable = true,git = "https://github.com/18F/django-data-ingest.git",ref = "master"}
+
+[requires]
+python_version = "3.6"
