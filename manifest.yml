@@ -1,0 +1,4 @@
+applications:
+- name: workzone-validator
+  services:
+   - workzone-validator-db
