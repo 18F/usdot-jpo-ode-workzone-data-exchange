@@ -64,314 +64,317 @@
         },
         "closedShoulders-enum": {  
             "enum": ["outside", "inside", "both", "none", "unknown"]
-        }
-    },
-    "type": "object",
-    "properties": {
-        "identifier": {
-            "description": "A unique identifier issued by the data feed provider to identify the work zone project or activity",
-            "type": "string"
         },
-        "subidentifier": {
-            "description": "A unique identifier issued by data feed provider that provides additional references to project or activity",
-            "type": "string"
-        },
-        "startDateTime": {
-            "description": "The time and date when a work zone starts",
+        "WZ-Activity": {
             "type": "object",
             "properties": {
-                "startDateTime-est": {
-                    "description": "The planned time and date when a work zone starts",
-                    "type": "string",
-                    "format": "date-time"
-                },
-                "startDateTime-ver": {
-                    "description": "A verified time and date when the work zone was actually installed",
-                    "type": "string",
-                    "format": "date-time"
-                },
-                "startDateTime-cancelled": {
-                    "description": "Cancellation of a planned start time and date associated with a work zone",
-                    "type": "string",
-                    "format": "date-time"
-                },
-                "timeConfidenceLevel": {
-                    "description": "A confidence level (in percentage) of when the work zone activities will actually start",
-                    "type": "number",
-                    "minimum": 0,
-                    "maximum": 1
-                }
-            },
-            "oneOf": [
-                {
-                    "required": ["startDateTime-est"]
-                },
-                {
-                    "required": ["startDateTime-ver"]
-                },
-                {
-                    "required": ["startDateTime-cancelled"]
-                }
-            ]
-        },
-        "endDateTime": {
-            "description": "The time and date when a work zone ends",
-            "type": "object",
-            "properties": {
-                "endDateTime-est": {
-                    "description": "The planned time and date when a work zone ends",
-                    "type": "string",
-                    "format": "date-time"
-                },
-                "endDateTime-ver": {
-                    "description": "A verified time and date when the work zone was actually ended",
-                    "type": "string",
-                    "format": "date-time"
-                },
-                "endDateTime-cancelled": {
-                    "description": "Cancellation of a planned end time and date associated with a work zone",
-                    "type": "string",
-                    "format": "date-time"
-                },
-                "timeConfidenceLevel": {
-                    "description": "A confidence level (in percentage) of when the work zone activities will actually start",
-                    "type": "number",
-                    "minimum": 0,
-                    "maximum": 1
-                }
-            },
-            "oneOf": [
-                {
-                    "required": ["endDateTime-est"]
-                },
-                {
-                    "required": ["endDateTime-ver"]
-                },
-                {
-                    "required": ["endDateTime-cancelled"]
-                }
-            ]
-        },
-        "beginLocation": {
-            "description": "The LOCATION when work zone impact begins along a single road in a single direction (see BeginLocation). The impact typically begins where the first channeling device (e.g., cone or barrel) is located.",
-            "type": "object",
-            "properties": {
-                "roadName": {
-                    "description": "The name of the road on which the work zone applies which is known by the public",
+                "identifier": {
+                    "description": "A unique identifier issued by the data feed provider to identify the work zone project or activity",
                     "type": "string"
                 },
-                "roadNum": {
-                    "description": "The road number designated by a jurisdiction such as a county, state or interstate",
+                "subidentifier": {
+                    "description": "A unique identifier issued by data feed provider that provides additional references to project or activity",
                     "type": "string"
                 },
-                "roadDirection": {
+                "startDateTime": {
+                    "description": "The time and date when a work zone starts",
+                    "type": "object",
+                    "properties": {
+                        "startDateTime-est": {
+                            "description": "The planned time and date when a work zone starts",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "startDateTime-ver": {
+                            "description": "A verified time and date when the work zone was actually installed",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "startDateTime-cancelled": {
+                            "description": "Cancellation of a planned start time and date associated with a work zone",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "timeConfidenceLevel": {
+                            "description": "A confidence level (in percentage) of when the work zone activities will actually start",
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                        }
+                    },
+                    "oneOf": [
+                        {
+                            "required": ["startDateTime-est"]
+                        },
+                        {
+                            "required": ["startDateTime-ver"]
+                        },
+                        {
+                            "required": ["startDateTime-cancelled"]
+                        }
+                    ]
+                },
+                "endDateTime": {
+                    "description": "The time and date when a work zone ends",
+                    "type": "object",
+                    "properties": {
+                        "endDateTime-est": {
+                            "description": "The planned time and date when a work zone ends",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "endDateTime-ver": {
+                            "description": "A verified time and date when the work zone was actually ended",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "endDateTime-cancelled": {
+                            "description": "Cancellation of a planned end time and date associated with a work zone",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "timeConfidenceLevel": {
+                            "description": "A confidence level (in percentage) of when the work zone activities will actually start",
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                        }
+                    },
+                    "oneOf": [
+                        {
+                            "required": ["endDateTime-est"]
+                        },
+                        {
+                            "required": ["endDateTime-ver"]
+                        },
+                        {
+                            "required": ["endDateTime-cancelled"]
+                        }
+                    ]
+                },
+                "beginLocation": {
+                    "description": "The LOCATION when work zone impact begins along a single road in a single direction (see BeginLocation). The impact typically begins where the first channeling device (e.g., cone or barrel) is located.",
+                    "type": "object",
+                    "properties": {
+                        "roadName": {
+                            "description": "The name of the road on which the work zone applies which is known by the public",
+                            "type": "string"
+                        },
+                        "roadNum": {
+                            "description": "The road number designated by a jurisdiction such as a county, state or interstate",
+                            "type": "string"
+                        },
+                        "roadDirection": {
+                            "allOf": [
+                                {
+                                    "description": "The designated direction of the roadName that is impacted by the work zone activity"
+                                },
+                                {"$ref": "#/definitions/roadDirection-enum"}
+                            ]
+                        },
+                        "latitude-est": {
+                            "description": "The estimated latitude along the roadway where the work zone area begins",
+                            "type": "number"
+                        },
+                        "latitude-ver": {
+                            "description": "A verified latitude along the roadway where the work zone area begins",
+                            "type": "number"
+                        },
+                        "longitude-est": {
+                            "description": "The estimated longitude along the roadway where the work zone area begins",
+                            "type": "number"
+                        },
+                        "longitude-ver": {
+                            "description": "A verified longitude along the roadway where the work zone area begins",
+                            "type": "number"
+                        },
+                        "milepost-est": {
+                            "description": "The estimated linear distance measured against a milepost marker along a roadway where the work zone begins",
+                            "type": "number"
+                        },
+                        "milepost-ver": {
+                            "description": "An accurately linear distance measured against a milepost marker along a roadway where the work zone begins",
+                            "type": "number"
+                        },
+                        "crossStreet": {
+                            "description": "The cross street along the roadway where the work zone area begins",
+                            "type": "string"
+                        }
+                    },
+                    "required": ["roadName", "roadDirection"],
                     "allOf": [
                         {
-                            "description": "The designated direction of the roadName that is impacted by the work zone activity"
+                            "oneOf" : [
+                                {"required": ["latitude-est"]},
+                                {"required": ["latitude-ver"]}
+                            ]
                         },
-                        {"$ref": "#/definitions/roadDirection-enum"}
+                        {
+                            "oneOf" : [
+                                {"required": ["longitude-est"]},
+                                {"required": ["longitude-ver"]}
+                            ]
+                        },
+                        {
+                            "oneOf": [
+                                {"required": ["milepost-est"]},
+                                {"required": ["milepost-ver"]},
+                                {
+                                    "not": {
+                                        "anyOf": [
+                                            {"required": ["milepost-est"]},
+                                            {"required": ["milepost-ver"]}
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
                     ]
                 },
-                "latitude-est": {
-                    "description": "The estimated latitude along the roadway where the work zone area begins",
-                    "type": "number"
+                "endLocation": {
+                    "description": "The LOCATION along a single road in a single direction when work zone impact ends and the traffic returns to normal (See EndLocation)",
+                    "type": "object",
+                    "properties": {
+                        "latitude-est": {
+                            "description": "The latitude along a roadway where the work zone area ends and the traffic returns to normal",
+                            "type": "number"
+                        },
+                        "latitude-ver": {
+                            "description": "A verified latitude along the roadway where the work zone area ends",
+                            "type": "number"
+                        },
+                        "longitude-est": {
+                            "description": "The longitude along a roadway where the work zone area ends and the traffic returns to normal",
+                            "type": "number"
+                        },
+                        "longitude-ver": {
+                            "description": "A verified longitude along the roadway where the work zone area ends",
+                            "type": "number"
+                        },
+                        "milepost-est": {
+                            "description": "The measured linear distance along a roadway where the work zone begins",
+                            "type": "number"
+                        },
+                        "milepost-ver": {
+                            "description": "An accurately linear distance measured against a milepost marker along a roadway where the work zone begins",
+                            "type": "number"
+                        },
+                        "crossStreet": {
+                            "description": "The cross street along a roadway where the work zone area ends and the traffic returns to normal",
+                            "type": "string"
+                        }
+                    },
+                    "allOf": [
+                        {
+                            "oneOf" : [
+                                {"required": ["latitude-est"]},
+                                {"required": ["latitude-ver"]}
+                            ]
+                        },
+                        {
+                            "oneOf" : [
+                                {"required": ["longitude-est"]},
+                                {"required": ["longitude-ver"]}
+                            ]
+                        },
+                        {
+                            "oneOf": [
+                                {"required": ["milepost-est"]},
+                                {"required": ["milepost-ver"]},
+                                {
+                                    "not": {
+                                        "anyOf": [
+                                            {"required": ["milepost-est"]},
+                                            {"required": ["milepost-ver"]}
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 },
-                "latitude-ver": {
-                    "description": "A verified latitude along the roadway where the work zone area begins",
-                    "type": "number"
+                "wz_status": {
+                    "allOf": [
+                        {
+                            "description": "The status of the work zone"
+                        },
+                        {"$ref": "#/definitions/wz-Status-enum"}
+                    ]
                 },
-                "longitude-est": {
-                    "description": "The estimated longitude along the roadway where the work zone area begins",
-                    "type": "number"
-                },
-                "longitude-ver": {
-                    "description": "A verified longitude along the roadway where the work zone area begins",
-                    "type": "number"
-                },
-                "milepost-est": {
-                    "description": "The estimated linear distance measured against a milepost marker along a roadway where the work zone begins",
-                    "type": "number"
-                },
-                "milepost-ver": {
-                    "description": "An accurately linear distance measured against a milepost marker along a roadway where the work zone begins",
-                    "type": "number"
-                },
-                "crossStreet": {
-                    "description": "The cross street along the roadway where the work zone area begins",
+                "totalLanes": {
+                    "description": "The total number of lanes associated with the road segment designated by the BeginLocation and EndLocation",
                     "type": "string"
-                }
-            },
-            "required": ["roadName", "roadDirection"],
-            "allOf": [
-                {
-                    "oneOf" : [
-                        {"required": ["latitude-est"]},
-                        {"required": ["latitude-ver"]}
-                    ]
                 },
-                {
-                    "oneOf" : [
-                        {"required": ["longitude-est"]},
-                        {"required": ["longitude-ver"]}
-                    ]
-                },
-                {
-                    "oneOf": [
-                        {"required": ["milepost-est"]},
-                        {"required": ["milepost-ver"]},
+                "openLanes": {
+                    "allOf": [
                         {
-                            "not": {
-                                "anyOf": [
-                                    {"required": ["milepost-est"]},
-                                    {"required": ["milepost-ver"]}
-                                ]
-                            }
+                            "description": "The laneType that is opened on the road segment designated by the work zone BeginLocation"
+                        },
+                        {"$ref": "#/definitions/laneType-enum"}
+                    ]
+                },
+                "closedLanes": {
+                    "allOf": [
+                        {
+                            "description": "The laneType that is closed due to the work zone on the road segment designated by the Begin Location and EndLocation"
+                        },
+                        {"$ref": "#/definitions/laneType-enum"}
+                    ]  
+                },
+                "closedShoulders": {
+                    "allOf": [
+                        {
+                            "description": "An enumerated type identifying the shoulder lanes that are closed"
+                        },
+                        {"$ref": "#/definitions/closedShoulders-enum"}
+                    ]
+                },
+                "workersPresent": {
+                    "description": "A flag indicating that there are workers present in the work zone",
+                    "type": "boolean"
+                },
+                "reducedSpdPosted": {
+                    "description": "The reduced speed limit posted in the work zone",
+                    "type": "integer"
+                },
+                "roadRestrictions": {
+                    "allOf": [
+                        {
+                            "description": "One or more roadRestriction flags indicating restrictions apply to the work zone road segment associated with the work zone bounded by the begin / end locations"
+                        },
+                        {
+                            "anyOf": [
+                                {"$ref": "#/definitions/roadRestriction-enum"},
+                                {
+                                    "type": "array",
+                                    "items": {"$ref": "#/definitions/roadRestriction-enum"}
+                                }
+                            ]
                         }
                     ]
-                }
-            ]
-        },
-        "endLocation": {
-            "description": "The LOCATION along a single road in a single direction when work zone impact ends and the traffic returns to normal (See EndLocation)",
-            "type": "object",
-            "properties": {
-                "latitude-est": {
-                    "description": "The latitude along a roadway where the work zone area ends and the traffic returns to normal",
-                    "type": "number"
                 },
-                "latitude-ver": {
-                    "description": "A verified latitude along the roadway where the work zone area ends",
-                    "type": "number"
-                },
-                "longitude-est": {
-                    "description": "The longitude along a roadway where the work zone area ends and the traffic returns to normal",
-                    "type": "number"
-                },
-                "longitude-ver": {
-                    "description": "A verified longitude along the roadway where the work zone area ends",
-                    "type": "number"
-                },
-                "milepost-est": {
-                    "description": "The measured linear distance along a roadway where the work zone begins",
-                    "type": "number"
-                },
-                "milepost-ver": {
-                    "description": "An accurately linear distance measured against a milepost marker along a roadway where the work zone begins",
-                    "type": "number"
-                },
-                "crossStreet": {
-                    "description": "The cross street along a roadway where the work zone area ends and the traffic returns to normal",
+                "description": {
+                    "description": "Short free text description of work zone",
                     "type": "string"
-                }
+                },
+                "issuingOrganization": {
+                    "description": "The organization issuing the data feed",
+                    "type": "string"
+                },
+                "timestampEventCreation": {
+                    "description": "The time and date when the activity or event was created",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "timestampEventUpdate": {
+                    "description": "The time and date when the activity or event was updated",
+                    "type": "string",
+                    "format": "date-time"
+                }    
             },
-            "allOf": [
-                {
-                    "oneOf" : [
-                        {"required": ["latitude-est"]},
-                        {"required": ["latitude-ver"]}
-                    ]
-                },
-                {
-                    "oneOf" : [
-                        {"required": ["longitude-est"]},
-                        {"required": ["longitude-ver"]}
-                    ]
-                },
-                {
-                    "oneOf": [
-                        {"required": ["milepost-est"]},
-                        {"required": ["milepost-ver"]},
-                        {
-                            "not": {
-                                "anyOf": [
-                                    {"required": ["milepost-est"]},
-                                    {"required": ["milepost-ver"]}
-                                ]
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        "wz_status": {
-            "allOf": [
-                {
-                    "description": "The status of the work zone"
-                },
-                {"$ref": "#/definitions/wz-Status-enum"}
-            ]
-        },
-        "totalLanes": {
-            "description": "The total number of lanes associated with the road segment designated by the BeginLocation and EndLocation",
-            "type": "string"
-        },
-        "openLanes": {
-            "allOf": [
-                {
-                    "description": "The laneType that is opened on the road segment designated by the work zone BeginLocation"
-                },
-                {"$ref": "#/definitions/laneType-enum"}
-            ]
-        },
-        "closedLanes": {
-            "allOf": [
-                {
-                    "description": "The laneType that is closed due to the work zone on the road segment designated by the Begin Location and EndLocation"
-                },
-                {"$ref": "#/definitions/laneType-enum"}
-            ]  
-        },
-        "closedShoulders": {
-            "allOf": [
-                {
-                    "description": "An enumerated type identifying the shoulder lanes that are closed"
-                },
-                {"$ref": "#/definitions/closedShoulders-enum"}
-            ]
-        },
-        "workersPresent": {
-            "description": "A flag indicating that there are workers present in the work zone",
-            "type": "boolean"
-        },
-        "reducedSpdPosted": {
-            "description": "The reduced speed limit posted in the work zone",
-            "type": "integer"
-        },
-        "roadRestrictions": {
-            "allOf": [
-                {
-                    "description": "One or more roadRestriction flags indicating restrictions apply to the work zone road segment associated with the work zone bounded by the begin / end locations"
-                },
-                {
-                    "anyOf": [
-                        {"$ref": "#/definitions/roadRestriction-enum"},
-                        {
-                            "type": "array",
-                            "items": {"$ref": "#/definitions/roadRestriction-enum"}
-                        }
-                    ]
-                }
-            ]
-        },
-        "description": {
-            "description": "Short free text description of work zone",
-            "type": "string"
-        },
-        "issuingOrganization": {
-            "description": "The organization issuing the data feed",
-            "type": "string"
-        },
-        "timestampEventCreation": {
-            "description": "The time and date when the activity or event was created",
-            "type": "string",
-            "format": "date-time"
-        },
-        "timestampEventUpdate": {
-            "description": "The time and date when the activity or event was updated",
-            "type": "string",
-            "format": "date-time"
-        }     
+            "required": ["identifier", "startDateTime", "endDateTime", "beginLocation", "endLocation", "closedLanes"]
+        }
     },
-    "required": ["identifier", "startDateTime", "endDateTime", "beginLocation", "endLocation", "closedLanes"]
-
+    "type": "array",
+    "items": {"$ref": "#/definitions/WZ-Activity"}
 }
