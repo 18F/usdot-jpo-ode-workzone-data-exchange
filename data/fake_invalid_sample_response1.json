@@ -1,0 +1,409 @@
+{
+    "tables": [
+        {
+            "headers": [],
+            "whole_table_errors": [],
+            "rows": [
+                {
+                    "row_number": 0,
+                    "errors": [
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'string'",
+                            "fields": [
+                                "startDateTime",
+                                "startDateTime-cancelled"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'number'",
+                            "fields": [
+                                "startDateTime",
+                                "timeConfidenceLevel"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'startDateTime-est': '2017-06-12 16:30:00', 'startDateTime-ver': '2017-06-12 16:30:00', 'startDateTime-cancelled': None, 'timeConfidenceLevel': None} is valid under each of {'required': ['startDateTime-ver']}, {'required': ['startDateTime-cancelled']}, {'required': ['startDateTime-est']}",
+                            "fields": [
+                                "startDateTime"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'string'",
+                            "fields": [
+                                "endDateTime",
+                                "endDateTime-cancelled"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'number'",
+                            "fields": [
+                                "endDateTime",
+                                "timeConfidenceLevel"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'endDateTime-est': '2021-12-31 17:00:00', 'endDateTime-ver': '2021-12-31 17:00:00', 'endDateTime-cancelled': None, 'timeConfidenceLevel': None} is valid under each of {'required': ['endDateTime-ver']}, {'required': ['endDateTime-cancelled']}, {'required': ['endDateTime-est']}",
+                            "fields": [
+                                "endDateTime"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'string'",
+                            "fields": [
+                                "beginLocation",
+                                "roadNum"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "enum",
+                            "message": "None is not one of ['northbound', 'eastbound', 'southbound', 'westbound']",
+                            "fields": [
+                                "beginLocation",
+                                "roadDirection"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'string'",
+                            "fields": [
+                                "beginLocation",
+                                "crossStreet"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'I-1175', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.350189, 'latitude-ver': -44.350189, 'longitude-est': 28.487378, 'longitude-ver': 28.487378, 'milepost-est': 45.0, 'milepost-ver': 45.0, 'crossStreet': None} is valid under each of {'required': ['latitude-ver']}, {'required': ['latitude-est']}",
+                            "fields": [
+                                "beginLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'I-1175', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.350189, 'latitude-ver': -44.350189, 'longitude-est': 28.487378, 'longitude-ver': 28.487378, 'milepost-est': 45.0, 'milepost-ver': 45.0, 'crossStreet': None} is valid under each of {'required': ['longitude-ver']}, {'required': ['longitude-est']}",
+                            "fields": [
+                                "beginLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'I-1175', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.350189, 'latitude-ver': -44.350189, 'longitude-est': 28.487378, 'longitude-ver': 28.487378, 'milepost-est': 45.0, 'milepost-ver': 45.0, 'crossStreet': None} is valid under each of {'required': ['milepost-ver']}, {'required': ['milepost-est']}",
+                            "fields": [
+                                "beginLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'string'",
+                            "fields": [
+                                "endLocation",
+                                "crossStreet"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'I-1175', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.350189, 'latitude-ver': -44.350189, 'longitude-est': 28.487378, 'longitude-ver': 28.487378, 'milepost-est': 54.0, 'milepost-ver': 54.0, 'crossStreet': None} is valid under each of {'required': ['latitude-ver']}, {'required': ['latitude-est']}",
+                            "fields": [
+                                "endLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'I-1175', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.350189, 'latitude-ver': -44.350189, 'longitude-est': 28.487378, 'longitude-ver': 28.487378, 'milepost-est': 54.0, 'milepost-ver': 54.0, 'crossStreet': None} is valid under each of {'required': ['longitude-ver']}, {'required': ['longitude-est']}",
+                            "fields": [
+                                "endLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'I-1175', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.350189, 'latitude-ver': -44.350189, 'longitude-est': 28.487378, 'longitude-ver': 28.487378, 'milepost-est': 54.0, 'milepost-ver': 54.0, 'crossStreet': None} is valid under each of {'required': ['milepost-ver']}, {'required': ['milepost-est']}",
+                            "fields": [
+                                "endLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "additionalProperties",
+                            "message": "Additional properties are not allowed ('roadDirection', 'roadName', 'roadNum' were unexpected)",
+                            "fields": [
+                                "endLocation"
+                            ]
+                        }
+                    ],
+                    "data": {
+                        "identifier": "5220",
+                        "startDateTime": {
+                            "startDateTime-est": "2017-06-12 16:30:00",
+                            "startDateTime-ver": "2017-06-12 16:30:00",
+                            "startDateTime-cancelled": null,
+                            "timeConfidenceLevel": null
+                        },
+                        "endDateTime": {
+                            "endDateTime-est": "2021-12-31 17:00:00",
+                            "endDateTime-ver": "2021-12-31 17:00:00",
+                            "endDateTime-cancelled": null,
+                            "timeConfidenceLevel": null
+                        },
+                        "beginLocation": {
+                            "roadName": "I-1175",
+                            "roadNum": null,
+                            "roadDirection": null,
+                            "latitude-est": -44.350189,
+                            "latitude-ver": -44.350189,
+                            "longitude-est": 28.487378,
+                            "longitude-ver": 28.487378,
+                            "milepost-est": 45.0,
+                            "milepost-ver": 45.0,
+                            "crossStreet": null
+                        },
+                        "endLocation": {
+                            "roadName": "I-1175",
+                            "roadNum": null,
+                            "roadDirection": null,
+                            "latitude-est": -44.350189,
+                            "latitude-ver": -44.350189,
+                            "longitude-est": 28.487378,
+                            "longitude-ver": 28.487378,
+                            "milepost-est": 54.0,
+                            "milepost-ver": 54.0,
+                            "crossStreet": null
+                        },
+                        "wz_status": "Active",
+                        "totalLanes": "4",
+                        "openLanes": "none",
+                        "closedLanes": "all",
+                        "closedShoulders": "unknown",
+                        "workersPresent": true,
+                        "roadRestrictions": [
+                            "no-trucks",
+                            "no-parking",
+                            "permitted-oversize-loads-prohibited"
+                        ],
+                        "description": "Lanes blocked in both directions between mm 45 - 54 from 8am - 5pm each day for road widening work. Expect delays.",
+                        "issuingOrganization": "CQT",
+                        "timestampEventCreation": "2017-06-12 16:54:00",
+                        "timestampEventUpdate": "2017-06-12 16:54:00"
+                    }
+                },
+                {
+                    "row_number": 1,
+                    "errors": [
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'string'",
+                            "fields": [
+                                "startDateTime",
+                                "startDateTime-cancelled"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'number'",
+                            "fields": [
+                                "startDateTime",
+                                "timeConfidenceLevel"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'startDateTime-est': '2017-06-12 16:55:00', 'startDateTime-ver': '2017-06-12 16:55:00', 'startDateTime-cancelled': None, 'timeConfidenceLevel': None} is valid under each of {'required': ['startDateTime-ver']}, {'required': ['startDateTime-cancelled']}, {'required': ['startDateTime-est']}",
+                            "fields": [
+                                "startDateTime"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'string'",
+                            "fields": [
+                                "endDateTime",
+                                "endDateTime-cancelled"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'number'",
+                            "fields": [
+                                "endDateTime",
+                                "timeConfidenceLevel"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'endDateTime-est': '2021-07-31 17:00:00', 'endDateTime-ver': '2021-07-31 17:00:00', 'endDateTime-cancelled': None, 'timeConfidenceLevel': None} is valid under each of {'required': ['endDateTime-ver']}, {'required': ['endDateTime-cancelled']}, {'required': ['endDateTime-est']}",
+                            "fields": [
+                                "endDateTime"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'string'",
+                            "fields": [
+                                "beginLocation",
+                                "roadNum"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "enum",
+                            "message": "None is not one of ['northbound', 'eastbound', 'southbound', 'westbound']",
+                            "fields": [
+                                "beginLocation",
+                                "roadDirection"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'string'",
+                            "fields": [
+                                "beginLocation",
+                                "crossStreet"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'US-0166', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.184075, 'latitude-ver': -44.184075, 'longitude-est': 29.452345, 'longitude-ver': 29.452345, 'milepost-est': 0.0, 'milepost-ver': 0.0, 'crossStreet': None} is valid under each of {'required': ['latitude-ver']}, {'required': ['latitude-est']}",
+                            "fields": [
+                                "beginLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'US-0166', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.184075, 'latitude-ver': -44.184075, 'longitude-est': 29.452345, 'longitude-ver': 29.452345, 'milepost-est': 0.0, 'milepost-ver': 0.0, 'crossStreet': None} is valid under each of {'required': ['longitude-ver']}, {'required': ['longitude-est']}",
+                            "fields": [
+                                "beginLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'US-0166', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.184075, 'latitude-ver': -44.184075, 'longitude-est': 29.452345, 'longitude-ver': 29.452345, 'milepost-est': 0.0, 'milepost-ver': 0.0, 'crossStreet': None} is valid under each of {'required': ['milepost-ver']}, {'required': ['milepost-est']}",
+                            "fields": [
+                                "beginLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "type",
+                            "message": "None is not of type 'string'",
+                            "fields": [
+                                "endLocation",
+                                "crossStreet"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'US-0166', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.184075, 'latitude-ver': -44.184075, 'longitude-est': 29.452345, 'longitude-ver': 29.452345, 'milepost-est': 8.0, 'milepost-ver': 8.0, 'crossStreet': None} is valid under each of {'required': ['latitude-ver']}, {'required': ['latitude-est']}",
+                            "fields": [
+                                "endLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'US-0166', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.184075, 'latitude-ver': -44.184075, 'longitude-est': 29.452345, 'longitude-ver': 29.452345, 'milepost-est': 8.0, 'milepost-ver': 8.0, 'crossStreet': None} is valid under each of {'required': ['longitude-ver']}, {'required': ['longitude-est']}",
+                            "fields": [
+                                "endLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "oneOf",
+                            "message": "{'roadName': 'US-0166', 'roadNum': None, 'roadDirection': None, 'latitude-est': -44.184075, 'latitude-ver': -44.184075, 'longitude-est': 29.452345, 'longitude-ver': 29.452345, 'milepost-est': 8.0, 'milepost-ver': 8.0, 'crossStreet': None} is valid under each of {'required': ['milepost-ver']}, {'required': ['milepost-est']}",
+                            "fields": [
+                                "endLocation"
+                            ]
+                        },
+                        {
+                            "severity": "Error",
+                            "code": "additionalProperties",
+                            "message": "Additional properties are not allowed ('roadDirection', 'roadName', 'roadNum' were unexpected)",
+                            "fields": [
+                                "endLocation"
+                            ]
+                        }
+                    ],
+                    "data": {
+                        "identifier": "5222",
+                        "startDateTime": {
+                            "startDateTime-est": "2017-06-12 16:55:00",
+                            "startDateTime-ver": "2017-06-12 16:55:00",
+                            "startDateTime-cancelled": null,
+                            "timeConfidenceLevel": null
+                        },
+                        "endDateTime": {
+                            "endDateTime-est": "2021-07-31 17:00:00",
+                            "endDateTime-ver": "2021-07-31 17:00:00",
+                            "endDateTime-cancelled": null,
+                            "timeConfidenceLevel": null
+                        },
+                        "beginLocation": {
+                            "roadName": "US-0166",
+                            "roadNum": null,
+                            "roadDirection": null,
+                            "latitude-est": -44.184075,
+                            "latitude-ver": -44.184075,
+                            "longitude-est": 29.452345,
+                            "longitude-ver": 29.452345,
+                            "milepost-est": 0.0,
+                            "milepost-ver": 0.0,
+                            "crossStreet": null
+                        },
+                        "endLocation": {
+                            "roadName": "US-0166",
+                            "roadNum": null,
+                            "roadDirection": null,
+                            "latitude-est": -44.184075,
+                            "latitude-ver": -44.184075,
+                            "longitude-est": 29.452345,
+                            "longitude-ver": 29.452345,
+                            "milepost-est": 8.0,
+                            "milepost-ver": 8.0,
+                            "crossStreet": null
+                        },
+                        "closedLanes": "all",
+                        "description": "Look out for lane blocked between mm 0 - 8 for long-term road-widening project.",
+                        "issuingOrganization": "CQT",
+                        "timestampEventCreation": "2017-06-12 17:04:00",
+                        "timestampEventUpdate": "2017-06-12 17:04:00"
+                    }
+                }
+            ],
+            "valid_row_count": 0,
+            "invalid_row_count": 2
+        }
+    ],
+    "valid": false
+}

@@ -1,0 +1,88 @@
+{
+    "tables": [
+        {
+            "headers": [],
+            "whole_table_errors": [],
+            "rows": [
+                {
+                    "row_number": 0,
+                    "errors": [],
+                    "data": {
+                        "identifier": "5220",
+                        "startDateTime": {
+                            "startDateTime-ver": "2017-06-12 16:30:00",
+                            "timeConfidenceLevel": 0.5
+                        },
+                        "endDateTime": {
+                            "endDateTime-ver": "2021-12-31 17:00:00",
+                            "timeConfidenceLevel": 0.5
+                        },
+                        "beginLocation": {
+                            "roadName": "I-1175",
+                            "roadNum": "I-1175",
+                            "roadDirection": "northbound",
+                            "latitude-ver": -44.350189,
+                            "longitude-ver": 28.487378,
+                            "milepost-ver": 45.0,
+                            "crossStreet": "Washington"
+                        },
+                        "endLocation": {
+                            "latitude-ver": -44.350189,
+                            "longitude-ver": 28.487378,
+                            "milepost-ver": 54.0,
+                            "crossStreet": "Washington"
+                        },
+                        "wz_status": "Active",
+                        "totalLanes": "4",
+                        "openLanes": "none",
+                        "closedLanes": "all",
+                        "closedShoulders": "unknown",
+                        "workersPresent": true,
+                        "roadRestrictions": [
+                            "no-trucks",
+                            "no-parking",
+                            "permitted-oversize-loads-prohibited"
+                        ],
+                        "description": "Lanes blocked in both directions between mm 45 - 54 from 8am - 5pm each day for road widening work. Expect delays.",
+                        "issuingOrganization": "CQT",
+                        "timestampEventCreation": "2017-06-12 16:54:00",
+                        "timestampEventUpdate": "2017-06-12 16:54:00"
+                    }
+                },
+                {
+                    "row_number": 1,
+                    "errors": [],
+                    "data": {
+                        "identifier": "5222",
+                        "startDateTime": {
+                            "startDateTime-ver": "2017-06-12 16:55:00"
+                        },
+                        "endDateTime": {
+                            "endDateTime-ver": "2021-07-31 17:00:00"
+                        },
+                        "beginLocation": {
+                            "roadName": "US-0166",
+                            "roadDirection": "southbound",
+                            "latitude-est": -44.184075,
+                            "longitude-ver": 29.452345,
+                            "milepost-ver": 0.0
+                        },
+                        "endLocation": {
+                            "latitude-est": -44.184075,
+                            "longitude-est": 29.452345,
+                            "milepost-ver": 8.0
+                        },
+                        "closedLanes": "all",
+                        "description": "Look out for lane blocked between mm 0 - 8 for long-term road-widening project.",
+                        "issuingOrganization": "CQT",
+                        "timestampEventCreation": "2017-06-12 17:04:00",
+                        "timestampEventUpdate": "2017-06-12 17:04:00"
+                    }
+                }
+            ],
+            "valid_row_count": 2,
+            "invalid_row_count": 0
+        }
+    ],
+    "valid": true
+}
