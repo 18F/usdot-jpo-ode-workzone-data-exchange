@@ -1,0 +1,102 @@
+[
+  {
+    "identifier": 5220,
+    "StartDateTime": {
+      "startDateTime-est": "2017-06-12 16:30:00",
+      "startDateTime-ver": "2017-06-12 16:30:00",
+      "startDateTime-cancelled": null,
+      "timeConfidenceLevel": null
+    },
+    "EndDateTime": {
+      "endDateTime-est": "2021-12-31 17:00:00",
+      "endDateTime-ver": "2021-12-31 17:00:00",
+      "endDateTime-cancelled": null,
+      "timeConfidenceLevel": null
+    },
+    "BeginLocation": {
+      "roadName": "I-1175",
+      "roadNum": null,
+      "roadDirection": null,
+      "latitude-est": -44.350189,
+      "latitude-ver": -44.350189,
+      "longitude-est": 28.487378,
+      "longitude-ver": 28.487378,
+      "milepost-est": 45.0,
+      "milepost-ver": 45.0,
+      "crossStreet": null
+    },
+    "EndLocation": {
+      "roadName": "I-1175",
+      "roadNum": null,
+      "roadDirection": null,
+      "latitude-est": -44.350189,
+      "latitude-ver": -44.350189,
+      "longitude-est": 28.487378,
+      "longitude-ver": 28.487378,
+      "milepost-est": 54.0,
+      "milepost-ver": 54.0,
+      "crossStreet": null
+    },
+    "wz-Status": null,
+    "totalLanes": null,
+    "openLanes": null,
+    "closedLanes": null,
+    "closedShoulders": null,
+    "workersPresent": null,
+    "RoadRestritions": null,
+    "description": "Lanes blocked in both directions between mm 45 - 54 from 8am - 5pm each day for road widening work. Expect delays.",
+    "issuingOrganization": "CQT",
+    "timeStampCreation": "2017-06-12 16:54:00",
+    "timeStampUpdate": "2017-06-12 16:54:00"
+  },
+  {
+    "identifier": 5222,
+    "StartDateTime": {
+      "startDateTime-est": "2017-06-12 16:55:00",
+      "startDateTime-ver": "2017-06-12 16:55:00",
+      "startDateTime-cancelled": null,
+      "timeConfidenceLevel": null
+    },
+    "EndDateTime": {
+      "endDateTime-est": "2021-07-31 17:00:00",
+      "endDateTime-ver": "2021-07-31 17:00:00",
+      "endDateTime-cancelled": null,
+      "timeConfidenceLevel": null
+    },
+    "BeginLocation": {
+      "roadName": "US-0166",
+      "roadNum": null,
+      "roadDirection": null,
+      "latitude-est": -44.184075,
+      "latitude-ver": -44.184075,
+      "longitude-est": 29.452345,
+      "longitude-ver": 29.452345,
+      "milepost-est": 0.0,
+      "milepost-ver": 0.0,
+      "crossStreet": null
+    },
+    "EndLocation": {
+      "roadName": "US-0166",
+      "roadNum": null,
+      "roadDirection": null,
+      "latitude-est": -44.184075,
+      "latitude-ver": -44.184075,
+      "longitude-est": 29.452345,
+      "longitude-ver": 29.452345,
+      "milepost-est": 8.0,
+      "milepost-ver": 8.0,
+      "crossStreet": null
+    },
+    "wz-Status": null,
+    "totalLanes": null,
+    "openLanes": null,
+    "closedLanes": null,
+    "closedShoulders": null,
+    "workersPresent": null,
+    "RoadRestritions": null,
+    "description": "Look out for lane blocked between mm 0 - 8 for long-term road-widening project.",
+    "issuingOrganization": "CQT",
+    "timeStampCreation": "2017-06-12 17:04:00",
+    "timeStampUpdate": "2017-06-12 17:04:00"
+  }
+]
